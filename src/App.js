@@ -40,6 +40,7 @@ function App() {
 
       return data
     })
+    // eslint-disable-next-line
   }, [])
 
   return (
