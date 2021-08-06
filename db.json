@@ -36,6 +36,22 @@
       "user_likes_id": [],
       "user_id": 2,
       "created_at": 1628284344397
+    },
+    {
+      "id": "3ed8b811770",
+      "content": "How's it going?",
+      "likes": 0,
+      "user_likes_id": [],
+      "user_id": 2,
+      "created_at": 1628285933757
+    },
+    {
+      "id": "803a405385a",
+      "content": "rrrt",
+      "likes": 0,
+      "user_likes_id": [],
+      "user_id": 2,
+      "created_at": 1628287224315
     }
   ],
   "users": [

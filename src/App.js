@@ -1,8 +1,12 @@
 import { useEffect, useState} from 'react';
 import axios from "axios";
-import PostList from './containers/postlist';
-import NewPosts from './forms/newposts';
- 
+import Home from './views/home'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
+import UserPage from './views/user-page'
 
 // next up is creating comments and likes. I'm going to embed the comments into the post document itself. This approach works slightly well with mongodb but if we end up using sql we can scrap it. Alot of the work I did 
 // between line 11-33 was to create the relationships that ORM could do for us. However, not using a ORM is a totally viable approach as long as we can create relationships ourselves when querying the API. 
@@ -44,12 +48,16 @@ function App() {
   }, [])
 
   return (
-    <div className="App">
-      <header className="App-header">
-          <NewPosts setPosts={setPosts} usersObject={usersObject} user={user}/>
-          <PostList posts={posts}/>
-      </header>
-    </div>
+    <Router>
+    <Switch>
+    <Route path="/user/:id">
+      <UserPage />
+    </Route>
+    <Route path="/">
+      <Home setPosts={setPosts} usersObject={usersObject} user={user} posts={posts} />
+    </Route>
+  </Switch>
+  </Router>
   );
 }
 
