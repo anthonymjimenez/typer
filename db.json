@@ -1,0 +1,55 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "content": "Today was boring!",
+      "likes": 0,
+      "user_likes_ids": [],
+      "user_id": 1
+    },
+    {
+      "id": 2,
+      "content": "Today was slightly less boring!",
+      "likes": 0,
+      "user_likes_id": [],
+      "user_id": 1
+    },
+    {
+      "id": 4,
+      "content": "dddd",
+      "likes": 0,
+      "user_likes_id": [],
+      "user_id": 2
+    },
+    {
+      "id": "f3899a0ca66",
+      "content": "Hey everyone!",
+      "likes": 0,
+      "user_likes_id": [],
+      "user_id": 2,
+      "created_at": 1628284216473
+    },
+    {
+      "id": "7b676a08046",
+      "content": "Hey everyone!",
+      "likes": 0,
+      "user_likes_id": [],
+      "user_id": 2,
+      "created_at": 1628284344397
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "Tommy",
+      "password": "123",
+      "profilePicture": "https://mk0hootsuiteblof6bud.kinstacdn.com/wp-content/uploads/2019/05/social-media-customer-service.svg"
+    },
+    {
+      "id": 2,
+      "username": "Anty",
+      "password": "123",
+      "profilePicture": "https://ugc.futurelearn.com/uploads/images/73/d3/header_73d3bed8-60ea-4ef3-a824-1ffaa0215348.jpg"
+    }
+  ]
+}
