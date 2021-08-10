@@ -10,7 +10,7 @@ import UserPage from './views/user-page'
 
 // next up is creating comments and likes. I'm going to embed the comments into the post document itself. This approach works slightly well with mongodb but if we end up using sql we can scrap it. Alot of the work I did 
 // between line 11-33 was to create the relationships that ORM could do for us. However, not using a ORM is a totally viable approach as long as we can create relationships ourselves when querying the API. 
-// this will be probably be pretty straightforward since the only 'gluing' we have to do is between posts and users. The relationship between posts,comments and likes could be self contained 
+// this will be probably be pretty straightforward since the only 'gluing' we have to do is between posts and users. The relationship between posts,comments and likes could be self contained in the post 
 // ex.  "posts": [{"id": 1, "content": "Today was boring!", "likes": 0, "user_likes_ids": [], "user_id": 1, comments: [array of comments]}]
 
 
@@ -21,8 +21,8 @@ function App() {
   let [user, setUser] = useState(2);
   useEffect(() => {
     const fetch = async () => {
-      let req = await axios.get('http://localhost:3000/posts')
-      let users = await axios.get('http://localhost:3000/users')
+      let req = await axios.get('http://localhost:8000/posts')
+      let users = await axios.get('http://localhost:8000/users')
       let usersObject = {};
       users.data.forEach(user => 
         usersObject[user.id] = user
@@ -51,7 +51,7 @@ function App() {
     <Router>
     <Switch>
     <Route path="/user/:id">
-      <UserPage />
+      <UserPage posts={posts} usersObject={usersObject} />
     </Route>
     <Route path="/">
       <Home setPosts={setPosts} usersObject={usersObject} user={user} posts={posts} />

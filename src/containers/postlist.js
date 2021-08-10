@@ -4,7 +4,8 @@ const PostList = ({ posts }) => {
     return (
         <>
         <h3> Recent posts! </h3>
-        {posts.map(post => 
+        {
+        posts.map(post =>
         <>
         <Post post={post}/>
         </>

@@ -52,6 +52,22 @@
       "user_likes_id": [],
       "user_id": 2,
       "created_at": 1628287224315
+    },
+    {
+      "id": "db46b16faf0",
+      "content": "Today was great!",
+      "likes": 0,
+      "user_likes_id": [],
+      "user_id": 2,
+      "created_at": 1628288760641
+    },
+    {
+      "id": "c6f124e089c",
+      "content": "Hello!",
+      "likes": 0,
+      "user_likes_id": [],
+      "user_id": 2,
+      "created_at": 1628289726061
     }
   ],
   "users": [
@@ -59,13 +75,15 @@
       "id": 1,
       "username": "Tommy",
       "password": "123",
-      "profilePicture": "https://mk0hootsuiteblof6bud.kinstacdn.com/wp-content/uploads/2019/05/social-media-customer-service.svg"
+      "profilePicture": "https://mk0hootsuiteblof6bud.kinstacdn.com/wp-content/uploads/2019/05/social-media-customer-service.svg",
+      "bio": "Life is good when you are Tommy!"
     },
     {
       "id": 2,
       "username": "Anty",
       "password": "123",
-      "profilePicture": "https://ugc.futurelearn.com/uploads/images/73/d3/header_73d3bed8-60ea-4ef3-a824-1ffaa0215348.jpg"
+      "profilePicture": "https://ugc.futurelearn.com/uploads/images/73/d3/header_73d3bed8-60ea-4ef3-a824-1ffaa0215348.jpg",
+      "bio": "Another great day!"
     }
   ]
 }
