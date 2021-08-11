@@ -1,52 +1,28 @@
 {
   "posts": [
     {
-      "id": "7b676a08046",
-      "content": "Hey everyone!",
+      "id": "7a5b082b7ee",
+      "content": "Takes\n",
       "likes": 0,
       "user_likes_id": [],
       "user_id": 1,
-      "created_at": 1628284344397
+      "created_at": "2021/08/11 04:58:23 967"
     },
     {
-      "id": "894567f835a",
-      "content": "Hey fun!",
-      "likes": 0,
-      "user_likes_id": [],
-      "user_id": 2,
-      "created_at": 1628711694839
-    },
-    {
-      "id": "69a62dd2e39",
-      "content": "Ph",
-      "likes": 0,
-      "user_likes_id": [],
-      "user_id": 2,
-      "created_at": 1628711773782
-    },
-    {
-      "id": "9a62dd2e397",
-      "content": "Ph",
-      "likes": 0,
-      "user_likes_id": [],
-      "user_id": 2,
-      "created_at": 1628711800965
-    },
-    {
-      "id": "a62dd2e3971",
-      "content": "rrr",
+      "id": "a5b082b7ee1",
+      "content": "Takes\n",
       "likes": 0,
       "user_likes_id": [],
       "user_id": 1,
-      "created_at": 1628711804122
+      "created_at": "2021/08/11 04:58:24 314"
     },
     {
-      "id": "27eb09a4fd3",
-      "content": "I GUESS",
+      "id": "b082b7ee141",
+      "content": "Takes\n",
       "likes": 0,
       "user_likes_id": [],
       "user_id": 2,
-      "created_at": 1628714309174
+      "created_at": "2021/08/11 04:58:25 009"
     }
   ],
   "users": [

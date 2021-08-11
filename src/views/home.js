@@ -6,7 +6,7 @@ const Home = ({ setPosts, user, posts }) => {
     <div className="App">
       <header className="App-header">
         <NewPosts setPosts={setPosts} user={user} />
-        <PostList posts={posts} user={user} />
+        <PostList posts={posts} user={user} setPosts={setPosts} />
       </header>
     </div>
   );

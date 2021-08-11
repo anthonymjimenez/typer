@@ -1,13 +1,11 @@
-import ModifyPost from "../components/modify-post";
 import Post from "../components/post";
-const PostList = ({ posts, user }) => {
+const PostList = ({ posts, user, setPosts }) => {
   return (
     <div>
       <h3> Recent posts! </h3>
       {posts.map((post) => (
         <div>
-          {post.user.id === user.id && <ModifyPost />}
-          <Post post={post} user={user} key={post.id} />
+          <Post post={post} user={user} setPosts={setPosts} key={post.id} />
         </div>
       ))}
     </div>

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { uid } from "uid";
+import moment from "moment";
 import axios from "axios";
 const NewPosts = ({ user, setPosts }) => {
   let [post, setPost] = useState("");
@@ -12,7 +13,7 @@ const NewPosts = ({ user, setPosts }) => {
         likes: 0,
         user_likes_id: [],
         user_id: user.id,
-        created_at: Date.now(),
+        created_at: moment().format("YYYY/MM/D hh:mm:ss SSS"),
       })
       .then((post) =>
         // setPosts(posts => {
