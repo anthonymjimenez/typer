@@ -1,73 +1,52 @@
 {
   "posts": [
     {
-      "id": 1,
-      "content": "Today was boring!",
-      "likes": 0,
-      "user_likes_ids": [],
-      "user_id": 1
-    },
-    {
-      "id": 2,
-      "content": "Today was slightly less boring!",
-      "likes": 0,
-      "user_likes_id": [],
-      "user_id": 1
-    },
-    {
-      "id": 4,
-      "content": "dddd",
-      "likes": 0,
-      "user_likes_id": [],
-      "user_id": 2
-    },
-    {
-      "id": "f3899a0ca66",
-      "content": "Hey everyone!",
-      "likes": 0,
-      "user_likes_id": [],
-      "user_id": 2,
-      "created_at": 1628284216473
-    },
-    {
       "id": "7b676a08046",
       "content": "Hey everyone!",
       "likes": 0,
       "user_likes_id": [],
-      "user_id": 2,
+      "user_id": 1,
       "created_at": 1628284344397
     },
     {
-      "id": "3ed8b811770",
-      "content": "How's it going?",
+      "id": "894567f835a",
+      "content": "Hey fun!",
       "likes": 0,
       "user_likes_id": [],
       "user_id": 2,
-      "created_at": 1628285933757
+      "created_at": 1628711694839
     },
     {
-      "id": "803a405385a",
-      "content": "rrrt",
+      "id": "69a62dd2e39",
+      "content": "Ph",
       "likes": 0,
       "user_likes_id": [],
       "user_id": 2,
-      "created_at": 1628287224315
+      "created_at": 1628711773782
     },
     {
-      "id": "db46b16faf0",
-      "content": "Today was great!",
+      "id": "9a62dd2e397",
+      "content": "Ph",
       "likes": 0,
       "user_likes_id": [],
       "user_id": 2,
-      "created_at": 1628288760641
+      "created_at": 1628711800965
     },
     {
-      "id": "c6f124e089c",
-      "content": "Hello!",
+      "id": "a62dd2e3971",
+      "content": "rrr",
+      "likes": 0,
+      "user_likes_id": [],
+      "user_id": 1,
+      "created_at": 1628711804122
+    },
+    {
+      "id": "27eb09a4fd3",
+      "content": "I GUESS",
       "likes": 0,
       "user_likes_id": [],
       "user_id": 2,
-      "created_at": 1628289726061
+      "created_at": 1628714309174
     }
   ],
   "users": [
