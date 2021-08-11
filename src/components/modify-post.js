@@ -1,10 +1,14 @@
 import { FaTrashAlt, FaEdit } from "react-icons/fa";
 import axios from "axios";
-const ModifyPost = ({ post, setPosts }) => {
+const ModifyPost = ({ post, setPosts, setIsEdit }) => {
   let { id } = post;
   return (
     <>
-      <button onClick={() => {}}>
+      <button
+        onClick={() => {
+          setIsEdit((edit) => !edit);
+        }}
+      >
         {" "}
         <FaEdit></FaEdit>{" "}
       </button>

@@ -1,5 +1,5 @@
 import PostList from "../containers/postlist";
-import NewPosts from "../forms/newposts";
+import NewPosts from "../form/newposts";
 
 const Home = ({ setPosts, user, posts }) => {
   return (

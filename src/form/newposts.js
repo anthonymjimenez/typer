@@ -14,6 +14,7 @@ const NewPosts = ({ user, setPosts }) => {
         user_likes_id: [],
         user_id: user.id,
         created_at: moment().format("YYYY/MM/D hh:mm:ss SSS"),
+        last_edited: null,
       })
       .then((post) =>
         // setPosts(posts => {
@@ -34,7 +35,7 @@ const NewPosts = ({ user, setPosts }) => {
         placeholder="Enter new post!"
         onChange={(e) => setPost(e.target.value)}
       />
-      <button onClick={createPost}> Button </button>
+      <button onClick={createPost}> Create! </button>
       <br></br>
       <hr></hr>
     </>
