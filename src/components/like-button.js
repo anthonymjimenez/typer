@@ -1,4 +1,5 @@
 import axios from "axios";
+import { FaThumbsUp } from "react-icons/fa";
 
 const LikeButton = ({ post, userId, setPosts }) => {
   let postId = post.id;
@@ -29,7 +30,9 @@ const LikeButton = ({ post, userId, setPosts }) => {
   return (
     <button
       onClick={() => (post.user_likes_id.includes(userId) ? unlike() : like())}
-    ></button>
+    >
+      <FaThumbsUp />
+    </button>
   );
 };
 

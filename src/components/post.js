@@ -30,7 +30,6 @@ const Post = ({ post, user, setPosts, usersObject }) => {
         />
       )}
       <LikeButton post={post} setPosts={setPosts} userId={user.id} />
-      <div>Likes: {post.user_likes_id.length}</div>
       <LikeList postLikes={post.user_likes_id} usersObject={usersObject} />
       {post.user.id === user.id && (
         <ModifyPost post={post} setPosts={setPosts} setIsEdit={setIsEdit} />
