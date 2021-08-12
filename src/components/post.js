@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import EditPost from "../form/editpost";
+import LikeButton from "./like-button";
 import ModifyPost from "./modify-post";
 
 const Post = ({ post, user, setPosts }) => {
@@ -27,6 +28,8 @@ const Post = ({ post, user, setPosts }) => {
           setIsEdit={setIsEdit}
         />
       )}
+      <LikeButton post={post} setPosts={setPosts} userId={user.id} />
+      <div>Likes: {post.user_likes_id.length}</div>
       {post.user.id === user.id && (
         <ModifyPost post={post} setPosts={setPosts} setIsEdit={setIsEdit} />
       )}
