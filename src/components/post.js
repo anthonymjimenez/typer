@@ -1,10 +1,11 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import LikeList from "../containers/likelist";
 import EditPost from "../form/editpost";
 import LikeButton from "./like-button";
 import ModifyPost from "./modify-post";
 
-const Post = ({ post, user, setPosts }) => {
+const Post = ({ post, user, setPosts, usersObject }) => {
   let [isEdit, setIsEdit] = useState(false);
   return (
     <>
@@ -30,6 +31,7 @@ const Post = ({ post, user, setPosts }) => {
       )}
       <LikeButton post={post} setPosts={setPosts} userId={user.id} />
       <div>Likes: {post.user_likes_id.length}</div>
+      <LikeList postLikes={post.user_likes_id} usersObject={usersObject} />
       {post.user.id === user.id && (
         <ModifyPost post={post} setPosts={setPosts} setIsEdit={setIsEdit} />
       )}
